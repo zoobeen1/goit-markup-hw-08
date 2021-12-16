@@ -1,0 +1,39 @@
+/* GLOBALS */
+a {
+	text-decoration: none;
+	color: var(--brend-color-1);
+ }
+ body {
+	font-family: "Roboto", sans-serif;
+	color: var(--text-color);
+ }
+ section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+ }
+ /*! GLOBAL BLOCKS */
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+ }
+ .brand-color1 {
+	color: var(--brend-color-1);
+ }
+ .flexer {
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+ }
+ .is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+ }
+ @import '../components/logo';
+ @import "../components/button";
+ @import "../components/address";
+ @import "../components/subscribe";
+ @import "../components/invite";
+ @import "../components/commands-list";
+ @import "../components/modal";

@@ -1,0 +1,41 @@
+
+ .subscribe {
+	margin-left: auto;
+	padding: 12px;
+	padding-right: 0;
+ 
+   &__label {
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #ffffff;
+		
+	}
+   &__content {
+		margin-top: 20px;
+		display: flex;
+	}
+ 	&__imput {
+		padding: 15px;
+		width: 358px;
+		height: 50px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-sizing: border-box;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+		margin-right: 12px;
+		background: transparent;
+ 	}
+ 	&__imput::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+ 	}
+ 	&__button {
+		padding: 10px 29px;
+ 	}
+}

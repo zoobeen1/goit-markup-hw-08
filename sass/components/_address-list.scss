@@ -1,0 +1,38 @@
+/* Block Address-List */
+.address-list {
+	display: flex;
+	margin-left: auto;
+ 
+ 	&__item {
+
+		&:last-child {
+			margin-left: 30px;
+ 		}
+	}
+ 	&__link {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: var(--text-color);
+		padding-top: 30px;
+		padding-bottom: 32px;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 	}
+ 	&__text {
+		padding-top: 2px;
+ 	}
+ 	&__link{
+		 
+		&:hover,
+ 		&:focus {
+			color: var(--brend-color-1);
+ 		}
+	}
+ 	&__icon {
+		fill: currentColor;
+		margin-right: 10px;
+ 	}
+}

@@ -1,0 +1,35 @@
+/*! Section Hero */
+.hero {
+	padding: 0;
+	background-color: var(--bg-color);
+ 
+ &__content {
+	padding-top: 200px;
+	margin: 0 auto;
+	width: 1600px;
+	background-image: linear-gradient(
+		 rgba(47, 48, 58, 0.4),
+		 rgba(47, 48, 58, 0.4)
+	  ),
+	  url("../images/hero-img.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding-bottom: 200px;
+ }
+ &__title {
+	width: 696px;
+	text-align: center;
+	margin: 0px auto 30px;
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+ }
+ &__button {
+	margin: 0px auto;
+	padding: 10px 29px;
+ }
+}
