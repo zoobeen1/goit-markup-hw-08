@@ -1,8 +1,10 @@
 /* Block Address-List */
 .address-list {
-	display: flex;
-	margin-left: auto;
- 
+	display: none;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		margin-left: auto;
+	 
  	&__item {
 
 		&:last-child {
@@ -35,4 +37,5 @@
 		fill: currentColor;
 		margin-right: 10px;
  	}
+  }
 }

@@ -1,0 +1,11 @@
+.mob-menu {
+	cursor: pointer;
+	background: none;
+	margin-left: auto;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	&:hover {
+		fill: var(--brend-color-1);
+	}
+}

@@ -1,32 +1,50 @@
 /*! Section Hero */
 .hero {
+	max-width: 480px;
+	margin: 0 auto;
 	padding: 0;
 	background-color: var(--bg-color);
- 
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
  &__content {
-	padding-top: 200px;
-	margin: 0 auto;
-	width: 1600px;
+	 
+	padding: 118px 0;
+	
 	background-image: linear-gradient(
 		 rgba(47, 48, 58, 0.4),
 		 rgba(47, 48, 58, 0.4)
 	  ),
-	  url("../images/hero-img.jpg");
-	background-repeat: no-repeat;
+	  url("../images/hero-mob-img.jpg");
+	  background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
-	padding-bottom: 200px;
+	background-size: cover;
+	// min-width: 480px;
+	@media screen and (min-width: 768px) {
+		padding: 200px 0;
+		background-image: linear-gradient(
+		 rgba(47, 48, 58, 0.4),
+		 rgba(47, 48, 58, 0.4)
+	  ),
+	  url("../images/hero-tab-img.jpg");
+	  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	}
  }
  &__title {
-	width: 696px;
+	// width: 696px;
 	text-align: center;
 	margin: 0px auto 30px;
 	color: #ffffff;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
+	@include font-base(900, 26, 42);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		// width: 1600px;
+		@include font-base (900, 44, 60);
+		}
  }
  &__button {
 	margin: 0px auto;

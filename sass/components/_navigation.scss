@@ -1,4 +1,6 @@
 .navigation {
+	display: none;
+	@media screen and (min-width: 768px) {
 	display: flex;
 	align-items: center;
 	background-color: #fff;
@@ -42,5 +44,6 @@
 			border-radius: 3px;
 	 	}
  	}
+}
 }
  

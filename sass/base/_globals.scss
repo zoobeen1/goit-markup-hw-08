@@ -8,14 +8,26 @@ a {
 	color: var(--text-color);
  }
  section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@media screen and (min-width: 768px) {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	}
  }
  /*! GLOBAL BLOCKS */
 .container {
-	width: 1200px;
+	outline: 1px solid red;
 	padding: 0 15px;
 	margin: 0 auto;
+	max-width: 480px;
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 1200px;
+	}
+	
  }
  .brand-color1 {
 	color: var(--brend-color-1);
@@ -32,8 +44,8 @@ a {
  }
  @import '../components/logo';
  @import "../components/button";
- @import "../components/address";
- @import "../components/subscribe";
+//  @import "../components/address";
+//  @import "../components/subscribe";
  @import "../components/invite";
  @import "../components/commands-list";
- @import "../components/modal";
+//  @import "../components/modal";
