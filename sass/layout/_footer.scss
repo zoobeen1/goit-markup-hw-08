@@ -4,27 +4,34 @@
 	padding: 60px 0;
 	margin: 0 auto;
 	&__title {
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
+		@include font-base(700, 14, 16);
+		// font-weight: 700;
+		// font-size: 14px;
+		// line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: #ffffff;
 		margin-bottom: 20px;
 	}
  	&__content {
-		display: flex;
+		// display: flex;
  	}
 	&__contact {
+		margin: 0 auto;
+		text-align: center;
 		width: 231px;
+		margin-bottom: 60px;
  	}
  	/* Модификатор logo */
  	&--logo {
 		color: #ffffff;
 	}
  	&__invite {
-		margin-left: 58px;
+		 margin: 0 auto;
+		 text-align: center;
+		// margin-left: 58px;
 		padding: 12px;
+		margin-bottom: 60px;
 	}
 	/* Модификатор для
 	 invite-list */

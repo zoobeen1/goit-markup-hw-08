@@ -1,22 +1,32 @@
 /*!Section Customers*/
 .customers {
 	&__title {
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.16;
+		@include font-base (700, 28, 33);
 		text-align: center;
 		letter-spacing: 0.03em;
 		color: var(--caption-color);
-		margin-bottom: 50px;
+		margin-bottom: 30px;
+		@media screen and (min-width: $tab) {
+			// @include font-base (700, 36, 42);
+			// margin-bottom: 50px;
+		}
+		@media screen and (min-width: $desc) {
+			@include font-base (700, 36, 42);
+			margin-bottom: 50px;
+		}
  	}
  	&__list {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		padding: 0;
-		margin: 0;
+		margin-top: -30px;
+
  	}
  	&__item {
+		margin-top: 30px;
 		& + & {
-		margin-left: 30px;
+		// margin-left: 30px;
  		}
 	}
 
@@ -24,7 +34,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 170px;
+		width: 210px;
+		// width: 170px;
 		height: 92px;
 		border: 1px solid var(--icons-color);
 		border-radius: 3px;

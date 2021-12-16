@@ -10,7 +10,7 @@ a {
  section {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tab) {
 	padding-top: 94px;
 	padding-bottom: 94px;
 	}
@@ -20,12 +20,14 @@ a {
 	outline: 1px solid red;
 	padding: 0 15px;
 	margin: 0 auto;
-	max-width: 480px;
-	@media screen and (min-width: 768px) {
-		max-width: 768px;
+	@media screen and (min-width: $mob) {
+		width: 480px;
 	}
-	@media screen and (min-width: 1200px) {
-		max-width: 1200px;
+	@media screen and (min-width: $tab) {
+		width: 768px;
+	}
+	@media screen and (min-width: $desc) {
+		width: 1200px;
 	}
 	
  }
@@ -44,8 +46,8 @@ a {
  }
  @import '../components/logo';
  @import "../components/button";
-//  @import "../components/address";
-//  @import "../components/subscribe";
+ @import "../components/address";
+ @import "../components/subscribe";
  @import "../components/invite";
  @import "../components/commands-list";
-//  @import "../components/modal";
+ @import "../components/modal";

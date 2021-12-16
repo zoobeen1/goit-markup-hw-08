@@ -41,7 +41,7 @@
 	@include font-base(900, 26, 42);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tab) {
 		// width: 1600px;
 		@include font-base (900, 44, 60);
 		}
