@@ -1,0 +1,14 @@
+.socials {
+  display: flex;
+  &__item {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    @include font-base(500, 18, 22);
+    letter-spacing: 0.02em;
+    color: var(--brend-color-1);
+  }
+}
