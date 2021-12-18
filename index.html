@@ -479,74 +479,75 @@
     </footer>
     <!--! Modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <!-- <div class="backdrop" data-modal> -->
-      <div class="modal">
-        <button class="modal__close" type="button" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form
-          class="call-form"
-          autocomplete="off"
-          method="POST"
-          action="javascript:void(0);"
-        >
-          <div class="call-form__item">
-            <label class="call-form__label" for="name">Имя</label>
-            <div class="call-form__input_wrapper">
-              <input class="call-form__input" type="text" id="name" />
-              <svg class="call-form__input_icon" width="18" height="18">
-                <use href="./images/icons.svg#person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="call-form__item">
-            <label class="call-form__label" for="tel">Телефон</label>
-            <div class="call-form__input_wrapper">
-              <input class="call-form__input" type="tel" id="tel" />
-              <svg class="call-form__input_icon" width="18" height="18">
-                <use href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="call-form__item">
-            <label class="call-form__label" for="email">Почта</label>
-            <div class="call-form__input_wrapper">
-              <input class="call-form__input"" type="email" id="email" />
-              <svg class="call-form__input_icon" width="18" height="18">
-                <use href="./images/icons.svg#email"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="call-form__item">
-            <label class="call-form__label" for="area">Комментарий</label>
-            <textarea
-              class="call-form__area"
-              placeholder="Введите текст"
-              id="area"
-            ></textarea>
-          </div>
-          <div class="call-form__check_item">
-            <label class="call-form__check_label" for="check">
-              <input
-                class="call-form__check"
-                type="checkbox"
-                name="check"
-                id="check"
-              />
-              <span class="call-form__check-border">
-                <svg class="call-form__chekbox" width="16" height="15">
-                  <use href="./images/icons.svg#check"></use>
+      <div class="modal__wrapper">
+        <div class="modal">
+          <button class="modal__close" type="button" data-modal-close>
+            <svg width="18" height="18">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form
+            class="call-form"
+            autocomplete="off"
+            method="POST"
+            action="javascript:void(0);"
+          >
+            <div class="call-form__item">
+              <label class="call-form__label" for="name">Имя</label>
+              <div class="call-form__input_wrapper">
+                <input class="call-form__input" type="text" id="name" />
+                <svg class="call-form__input_icon" width="18" height="18">
+                  <use href="./images/icons.svg#person"></use>
                 </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="call-form__link" href="#">Условия договора</a></label
-            >
-          </div>
-          <button class="call-form__button" type="submit">Отправить</button>
-        </form>
+              </div>
+            </div>
+            <div class="call-form__item">
+              <label class="call-form__label" for="tel">Телефон</label>
+              <div class="call-form__input_wrapper">
+                <input class="call-form__input" type="tel" id="tel" />
+                <svg class="call-form__input_icon" width="18" height="18">
+                  <use href="./images/icons.svg#phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="call-form__item">
+              <label class="call-form__label" for="email">Почта</label>
+              <div class="call-form__input_wrapper">
+                <input class="call-form__input"" type="email" id="email" />
+                <svg class="call-form__input_icon" width="18" height="18">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="call-form__item">
+              <label class="call-form__label" for="area">Комментарий</label>
+              <textarea
+                class="call-form__area"
+                placeholder="Введите текст"
+                id="area"
+              ></textarea>
+            </div>
+            <div class="call-form__check_item">
+              <label class="call-form__check_label" for="check">
+                <input
+                  class="call-form__check"
+                  type="checkbox"
+                  name="check"
+                  id="check"
+                />
+                <span class="call-form__check-border">
+                  <svg class="call-form__chekbox" width="16" height="15">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="call-form__link" href="#">Условия договора</a></label
+              >
+            </div>
+            <button class="call-form__button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <!--! Mobile menu -->
@@ -559,13 +560,13 @@
 
       <ul class="mobil-menu__links">
         <li class="mobil-menu__item">
-          <a href="" class="mobil-menu__link">Студия</a>
+          <a href="./index.html" class="mobil-menu__link">Студия</a>
         </li>
         <li class="mobil-menu__item">
-          <a href="" class="mobil-menu__link">Портфолио</a>
+          <a href="./portfolio.html" class="mobil-menu__link">Портфолио</a>
         </li>
         <li class="mobil-menu__item">
-          <a href="" class="mobil-menu__link">Контакты</a>
+          <a href="#contact" class="mobil-menu__link">Контакты</a>
         </li>
       </ul>
       <div class="mobil-menu__wrapper">
