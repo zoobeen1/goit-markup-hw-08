@@ -61,13 +61,14 @@
               </a>
             </li>
           </ul>
+          <!--! Mobile Menu -->
           <button
             class="mob-menu js-open-menu"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="address-list__icon" width="40" height="40">
+            <svg class="mob-menu__icon" width="40" height="40">
               <use href="./images/icons.svg#menu"></use>
             </svg>
           </button>
@@ -401,154 +402,158 @@
     <!--! Footer -->
     <footer class="footer">
       <div class="container footer__content">
-        <div class="footer__contact">
-          <a href="./" class="logo footer--logo">
-            <span class="brand-color1">Web</span>Studio
-          </a>
-          <address class="address" id="contact">
-            <p>г.Киев, пр-т Леси Украинки, 26</p>
-            <a class="address__link" href="mailto:info@dewstudio.com">
-              info@example.com
+        <div class="footer__wrapper">
+          <div class="footer__contact">
+            <a href="./" class="logo footer--logo">
+              <span class="brand-color1">Web</span>Studio
             </a>
-            <a class="address__link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="footer__invite">
-          <h2 class="footer__title">Присоединяйтесь</h2>
-          <!-- Invite block -->
-          <ul class="invite">
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
+            <address class="address" id="contact">
+              <p>г.Киев, пр-т Леси Украинки, 26</p>
+              <a class="address__link" href="mailto:info@dewstudio.com">
+                info@example.com
               </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <a class="address__link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <div class="footer__invite">
+            <h2 class="footer__title">Присоединяйтесь</h2>
+            <!-- Invite block -->
+            <ul class="invite">
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Footer Form -->
-        <form
-          class="subscribe"
-          autocomplete="off"
-          method="POST"
-          action="javascript:void(0);"
-        >
-          <label for="email" class="footer__title"
-            >ПОДПИШИТЕСЬ НА РАССЫЛКУ
-          </label>
-          <div class="subscribe__content">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="subscribe__imput"
-            />
-            <button class="button subscribe__button" type="submit">
-              Подписаться
-              <svg class="button__icon" width="24" height="24">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </footer>
-    <!--! Modal window -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal__wrapper">
-        <div class="modal">
-          <button class="modal__close" type="button" data-modal-close>
-            <svg width="18" height="18">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="footer__form">
           <form
-            class="call-form"
+            class="subscribe"
             autocomplete="off"
             method="POST"
             action="javascript:void(0);"
           >
-            <div class="call-form__item">
-              <label class="call-form__label" for="name">Имя</label>
-              <div class="call-form__input_wrapper">
-                <input class="call-form__input" type="text" id="name" />
-                <svg class="call-form__input_icon" width="18" height="18">
-                  <use href="./images/icons.svg#person"></use>
+            <label for="email" class="footer__title"
+              >ПОДПИШИТЕСЬ НА РАССЫЛКУ
+            </label>
+            <div class="subscribe__content">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="subscribe__imput"
+              />
+              <button class="button subscribe__button" type="submit">
+                Подписаться
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
                 </svg>
-              </div>
+              </button>
             </div>
-            <div class="call-form__item">
-              <label class="call-form__label" for="tel">Телефон</label>
-              <div class="call-form__input_wrapper">
-                <input class="call-form__input" type="tel" id="tel" />
-                <svg class="call-form__input_icon" width="18" height="18">
-                  <use href="./images/icons.svg#phone-black"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="call-form__item">
-              <label class="call-form__label" for="email">Почта</label>
-              <div class="call-form__input_wrapper">
-                <input class="call-form__input"" type="email" id="email" />
-                <svg class="call-form__input_icon" width="18" height="18">
-                  <use href="./images/icons.svg#email"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="call-form__item">
-              <label class="call-form__label" for="area">Комментарий</label>
-              <textarea
-                class="call-form__area"
-                placeholder="Введите текст"
-                id="area"
-              ></textarea>
-            </div>
-            <div class="call-form__check_item">
-              <label class="call-form__check_label" for="check">
-                <input
-                  class="call-form__check"
-                  type="checkbox"
-                  name="check"
-                  id="check"
-                />
-                <span class="call-form__check-border">
-                  <svg class="call-form__chekbox" width="16" height="15">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
-                </span>
-                Соглашаюсь с рассылкой и принимаю
-                <a class="call-form__link" href="#">Условия договора</a></label
-              >
-            </div>
-            <button class="call-form__button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
+    </footer>
+    <!--! Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="modal__wrapper"> -->
+      <div class="modal">
+        <button class="modal__close" type="button" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form
+          class="call-form"
+          autocomplete="off"
+          method="POST"
+          action="javascript:void(0);"
+        >
+          <div class="call-form__item">
+            <label class="call-form__label" for="name">Имя</label>
+            <div class="call-form__input_wrapper">
+              <input class="call-form__input" type="text" id="name" />
+              <svg class="call-form__input_icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-form__item">
+            <label class="call-form__label" for="tel">Телефон</label>
+            <div class="call-form__input_wrapper">
+              <input class="call-form__input" type="tel" id="tel" />
+              <svg class="call-form__input_icon" width="18" height="18">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-form__item">
+            <label class="call-form__label" for="email">Почта</label>
+            <div class="call-form__input_wrapper">
+              <input class="call-form__input"" type="email" id="email" />
+              <svg class="call-form__input_icon" width="18" height="18">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="call-form__item">
+            <label class="call-form__label" for="area">Комментарий</label>
+            <textarea
+              class="call-form__area"
+              placeholder="Введите текст"
+              id="area"
+            ></textarea>
+          </div>
+          <div class="call-form__check_item">
+            <label class="call-form__check_label" for="check">
+              <input
+                class="call-form__check"
+                type="checkbox"
+                name="check"
+                id="check"
+              />
+              <span class="call-form__check-border">
+                <svg class="call-form__chekbox" width="16" height="15">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="call-form__link" href="#">Условия договора</a></label
+            >
+          </div>
+          <button class="call-form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+      <!-- </div> -->
     </div>
     <!--! Mobile menu -->
     <div class="mobil-menu js-menu-container">

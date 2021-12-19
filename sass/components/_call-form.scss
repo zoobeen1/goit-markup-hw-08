@@ -97,7 +97,7 @@
     @include font-base(400, 12, 14);
     letter-spacing: 0.03em;
     color: var(--text-color);
-    @media screen and (min-width: $tab) {
+    @media screen and (min-width: $desc) {
       @include font-base(400, 14, 21);
       //   font-size: 14px;
       //   line-height: 1.71;
