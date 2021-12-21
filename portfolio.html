@@ -29,12 +29,12 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="./" class="navigation__link navigation__link--current"
-                  >Студия</a
-                >
+                <a href="./" class="navigation__link">Студия</a>
               </li>
               <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link"
+                <a
+                  href="./portfolio.html"
+                  class="navigation__link navigation__link--current"
                   >Портфолио</a
                 >
               </li>
@@ -322,80 +322,84 @@
     <!--! Footer -->
     <footer class="footer">
       <div class="container footer__content">
-        <div class="footer__contact">
-          <a href="./" class="logo footer--logo">
-            <span class="brand-color1">Web</span>Studio
-          </a>
-          <address class="address" id="contact">
-            <p>г.Киев, пр-т Леси Украинки, 26</p>
-            <a class="address__link" href="mailto:info@dewstudio.com">
-              info@example.com
+        <div class="footer__wrapper">
+          <div class="footer__contact">
+            <a href="./" class="logo footer--logo">
+              <span class="brand-color1">Web</span>Studio
             </a>
-            <a class="address__link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="footer__invite">
-          <h2 class="footer__title">Присоединяйтесь</h2>
-          <!-- Invite block -->
-          <ul class="invite">
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
+            <address class="address" id="contact">
+              <p>г.Киев, пр-т Леси Украинки, 26</p>
+              <a class="address__link" href="mailto:info@dewstudio.com">
+                info@example.com
               </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite__item">
-              <a href="" class="invite__link footer--invite">
-                <svg class="invite__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <a class="address__link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <div class="footer__invite">
+            <h2 class="footer__title">Присоединяйтесь</h2>
+            <!-- Invite block -->
+            <ul class="invite">
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite__item">
+                <a href="" class="invite__link footer--invite">
+                  <svg class="invite__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Footer Form -->
-        <form
-          class="subscribe"
-          autocomplete="off"
-          method="POST"
-          action="javascript:void(0);"
-        >
-          <label for="email" class="footer__title"
-            >ПОДПИШИТЕСЬ НА РАССЫЛКУ
-          </label>
-          <div class="subscribe__content">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="subscribe__imput"
-            />
-            <button class="button subscribe__button" type="submit">
-              Подписаться
-              <svg class="button__icon" width="24" height="24">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+        <div class="footer__form">
+          <form
+            class="subscribe"
+            autocomplete="off"
+            method="POST"
+            action="javascript:void(0);"
+          >
+            <label for="email" class="footer__title"
+              >ПОДПИШИТЕСЬ НА РАССЫЛКУ
+            </label>
+            <div class="subscribe__content">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="subscribe__imput"
+              />
+              <button class="button subscribe__button" type="submit">
+                Подписаться
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!--! Mobile menu -->

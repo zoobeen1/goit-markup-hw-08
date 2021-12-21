@@ -11,7 +11,9 @@
     margin-bottom: 20px;
   }
   &__content {
-    //  display: flex;
+    @media screen and (min-width: $desc) {
+      display: flex;
+    }
   }
   &__wrapper {
     @media screen and (min-width: $tab) {
@@ -19,23 +21,32 @@
     }
   }
   &__contact {
-    margin: 0 auto;
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+
     width: 231px;
     margin-bottom: 60px;
   }
   /* Модификатор logo */
   &--logo {
-    margin: 0 auto;
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+    }
     color: #ffffff;
   }
   &__invite {
     margin: 0 auto;
-    text-align: center;
-    // margin-left: 58px;
-    padding: 12px;
-    @media screen and (min-width: $tab) {
-      padding-top: 0;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+    @media screen and (min-width: $desc) {
+      padding: 12px;
+      margin-left: 58px;
     }
     margin-bottom: 60px;
   }
@@ -46,7 +57,13 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
   &__form {
-    margin: 0 auto;
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+    @media screen and (min-width: $desc) {
+      margin-left: 80px;
+    }
     max-width: 450px;
   }
 }

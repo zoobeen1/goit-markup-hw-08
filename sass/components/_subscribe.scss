@@ -1,8 +1,13 @@
 .subscribe {
   margin-left: auto;
-  // padding: 12px;
-  padding-right: 0;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    padding-right: 0;
+    text-align: center;
+  }
+  @media screen and (min-width: $desc) {
+    padding-top: 12px;
+    width: 570px;
+  }
 
   &__label {
     display: block;
@@ -14,12 +19,13 @@
     color: #ffffff;
   }
   &__content {
-    // margin-top: 20px;
-    // display: flex;
-    // justify-content: center;
+    margin-top: 20px;
+    @media screen and (min-width: $desc) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__imput {
-    margin-top: 20px;
     padding: 15px;
     width: 100%;
     height: 50px;
@@ -37,7 +43,9 @@
     color: rgba(255, 255, 255, 0.6);
   }
   &__button {
-    margin: 20px auto 0;
+    @media screen and (max-width: 1199px) {
+      margin: 20px auto 0;
+    }
     padding: 10px 29px;
   }
 }

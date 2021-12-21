@@ -1,16 +1,18 @@
 /*!Section Command*/
 .command {
-	background-color: var(--grey-background);
- 
- &__title {
-	@include font-base(700, 28, 33);
-	//font-weight: 700;
-	// font-size: 36px;
-	// line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--caption-color);
-	margin-bottom: 30px;
- }
+  background-color: var(--grey-background);
+
+  &__title {
+    @include font-base(700, 28, 33);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--caption-color);
+    margin-bottom: 30px;
+    @media screen and (min-width: $desc) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
+  }
 }
- 

@@ -6,8 +6,7 @@
     letter-spacing: 0.03em;
     color: var(--caption-color);
     margin-bottom: 30px;
-    @media screen and (min-width: $tab) {
-    }
+
     @media screen and (min-width: $desc) {
       @include font-base(700, 36, 42);
       margin-bottom: 50px;
@@ -15,7 +14,9 @@
   }
   &__list {
     display: flex;
+
     flex-wrap: wrap;
+
     //  justify-content: space-between;
     padding: 0;
     margin-top: -30px;
@@ -35,6 +36,9 @@
     }
     @media screen and (min-width: $tab) {
       flex-basis: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: $desc) {
+      flex-basis: calc((100% - 180px) / 6);
     }
     & + & {
       // margin-left: 30px;
