@@ -1,14 +1,14 @@
 .logo {
-	padding: 16px 0;
-	font-family: Raleway;
-	@include font-base (700, 24, 28);
-	letter-spacing: 0.03em;
-	color: var(--brend-color-2);
-	@media screen and (min-width: 768px) {
-	padding-top: 24px;
-	font-size: 26px;
-	line-height: 1.2;
-	margin-right: 93px;
-	padding-bottom: 25px;
- }
+  padding: 16px 0;
+  font-family: Raleway;
+  @include font-base(700, 24, 28);
+  letter-spacing: 0.03em;
+  color: var(--brend-color-2);
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+    padding-bottom: 25px;
+  }
 }

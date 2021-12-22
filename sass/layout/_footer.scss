@@ -24,16 +24,17 @@
     @media screen and (max-width: 1199px) {
       margin: 0 auto;
       text-align: center;
+      margin-bottom: 60px;
     }
 
     width: 231px;
-    margin-bottom: 60px;
   }
   /* Модификатор logo */
   &--logo {
     @media screen and (max-width: 1199px) {
       margin: 0 auto;
     }
+    padding-bottom: 20px;
     color: #ffffff;
   }
   &__invite {
@@ -59,7 +60,7 @@
   &__form {
     @media screen and (max-width: 1199px) {
       margin: 0 auto;
-      margin-top: 60px;
+      // margin-top: 60px;
     }
     @media screen and (min-width: $desc) {
       margin-left: 80px;
